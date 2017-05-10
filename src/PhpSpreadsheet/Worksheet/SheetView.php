@@ -98,9 +98,10 @@ class SheetView
         // but it is apparently still able to handle any scale >= 1
         if (($pValue >= 1) || is_null($pValue)) {
             $this->zoomScale = $pValue;
-        } else {
-            throw new \PhpOffice\PhpSpreadsheet\Exception('Scale must be greater than or equal to 1.');
-        }
+        } 
+        // else {
+        //     throw new \PhpOffice\PhpSpreadsheet\Exception('Scale must be greater than or equal to 1.');
+        // }
 
         return $this;
     }
@@ -130,9 +131,10 @@ class SheetView
     {
         if (($pValue >= 1) || is_null($pValue)) {
             $this->zoomScaleNormal = $pValue;
-        } else {
-            throw new \PhpOffice\PhpSpreadsheet\Exception('Scale must be greater than or equal to 1.');
-        }
+        } 
+        // else {
+        //     throw new \PhpOffice\PhpSpreadsheet\Exception('Scale must be greater than or equal to 1.');
+        // }
 
         return $this;
     }
